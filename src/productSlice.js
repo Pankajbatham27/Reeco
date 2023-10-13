@@ -8,7 +8,7 @@ const productSlice = createSlice({
   },
   reducers: {
     addProduct: (state, action) => {
-      state.products.push({ ...action.payload, status: 'added' });
+      state.products.push({ ...action.payload, status: 0 });
     },
     updateProductStatus: (state, action) => {
       const { product_id, status } = action.payload;
